@@ -16,7 +16,6 @@ else:
 
 print("=" * 30)
 print("Driver:", driver_name)
-print("-" * 15)
 print("Destination:", destination.upper())
 print("Distance:", distance, "km")
 print("Fuel cost:", fuel_cost, "KZT")
@@ -24,14 +23,17 @@ print("Category:", category)
 print("=" * 30)
 
 # Task B2
-print("Cost breakdown:")
+print("Cost Breakdown:")
 for km in range(100, int(distance) + 1, 100):
     current_cost = (km * fuel_consumption / 100) * fuel_price
-    print(km, "km ->", current_cost, "KZT")
+    print(km, "km->", current_cost, "KZT")
 
 # Task B3
-print("-" * 15)
+print("=" * 15)
 print("Destination uppercase:", destination.upper())
 print("Destination lowercase:", destination.lower())
 print("Length:", len(destination))
 print("Letter 'a' count:", destination.lower().count('a'))
+
+
+
